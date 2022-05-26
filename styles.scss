@@ -1,0 +1,151 @@
+$black-grey: hsl(0, 0%, 17%);
+$grey: hsl(0, 0%, 59%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+main {
+  background-image: url(images/pattern-bg.png);
+  background-size: cover;
+  text-align: center;
+  padding: 8rem 0;
+  position: relative;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+input {
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  text-align: left;
+  // margin: 2rem 0;
+  // margin-bottom: 4rem;
+  min-width: 40rem;
+  font-family: inherit;
+  color: $grey;
+}
+
+.arrow-btn {
+  display: inline-block;
+  background-color: black;
+  width: 5rem;
+  height: 52px;
+  margin-left: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+}
+
+svg {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.address-details {
+  background-color: rgb(229, 216, 216);
+  background-color: white;
+  // border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 10px;
+  position: absolute;
+  text-align: left;
+  // top: -50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 15px 16px 13px -5px rgba(0,0,0,0.1);
+
+
+  .address-info {
+    border-right: 1px solid $grey;
+    padding-left: 2rem;
+
+    &:last-child {
+      border: none;
+      margin: 0;
+    }
+
+    &__name {
+      font-size: 1.4rem;
+      color: $grey;
+      text-transform: uppercase;
+    } 
+
+    &__value {
+      color: $black-grey;
+      font-size: 2.6rem;
+      font-weight: bold;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 700px){
+  main {
+    padding-bottom: 24rem;
+  }
+
+  input {
+    width: 70vw;
+
+  }
+  .address-details {
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 0 auto;
+    padding: 3rem 8rem;
+
+    .address-info {
+      border-right: 0;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+}
+
+.map {
+  height: 600px;
+}
+
+.leaflet-popup-content {
+  font-size: 1.8rem !important;
+}
