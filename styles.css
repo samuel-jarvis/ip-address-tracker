@@ -50,6 +50,7 @@ input {
   border-radius: 10px;
   border: none;
   text-align: left;
+  margin: 2rem 0;
   min-width: 40rem;
   font-family: inherit;
   color: #969696;
@@ -107,7 +108,7 @@ h1 {
 
 .address-details .address-info {
   border-right: 1px solid #969696;
-  padding-left: 2rem;
+  padding: 0 2rem;
 }
 
 .address-details .address-info:last-child {
@@ -129,30 +130,44 @@ h1 {
 
 @media only screen and (max-width: 700px) {
   main {
+    padding: 8rem 2rem;
     padding-bottom: 24rem;
   }
+  h1 {
+    font-size: 3rem;
+  }
   input {
-    width: 70vw;
+    width: 100%;
+    min-width: 0;
   }
   .address-details {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     width: auto;
     margin: 0 auto;
-    padding: 3rem 8rem;
+    padding: 3rem 4rem;
+    min-width: 30rem;
   }
   .address-details .address-info {
     border-right: 0;
     text-align: center;
     margin-bottom: 2rem;
   }
+  .leaflet-control-container {
+    display: none;
+  }
 }
 
 .map {
-  height: 600px;
+  height: 700px;
 }
 
 .leaflet-popup-content {
   font-size: 1.8rem !important;
+}
+
+.js-error {
+  color: #f8b5b5;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=styles.css.map */
