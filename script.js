@@ -35,7 +35,7 @@ let map;
 
 //render map
 const renderMap = function (coords) {
-  // Check is map is rendered and remove
+  // Check if map is rendered then remove
   var container = L.DomUtil.get('map');
     if(container != null){
       container._leaflet_id = null;
@@ -88,7 +88,6 @@ function showMap (){
   }
 
   clearIPDetails();
-
   // map.remove()
   
   loadAPI(ip)

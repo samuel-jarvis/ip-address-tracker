@@ -8,13 +8,11 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -35,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/samuel-jarvis/ip-address-tracker)
+- Live Site URL: [Add live site URL here](https://ip-address-tracker-psi-olive.vercel.app/)
 
 
 ### Built with
@@ -46,7 +44,6 @@ Users should be able to:
 - Flexbox
 - Javascript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -59,7 +56,6 @@ Users should be able to:
 
 - [Leaflet Library](https://leafletjs.com/index.html) - I used this API to render maps
 - [IP Geolocation API](https://geo.ipify.org/docs) - I used this API to get IP address and other details like longitude and latitude for rendering the map
-
 
 ## Author
 
