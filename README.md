@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/samuel-jarvis/ip-address-tracker)
-- Live Site URL: [Add live site URL here](https://ip-address-tracker-psi-olive.vercel.app/)
+- Solution URL: [This Page](https://github.com/samuel-jarvis/ip-address-tracker)
+- Live Site URL: [Hosted on Vercel](https://ip-address-tracker-psi-olive.vercel.app/)
 
 
 ### Built with
